@@ -1,0 +1,19 @@
+Initializing the Controllers
+################################################################################
+config t
+system 
+  organization-name CCNP-SDWAN
+  site-id 1
+  system-ip <<string>>
+  host-name <<string>>
+  clock timezone Asia/Kathmandu
+  vbond <<string>>
+vpn 0
+  interface <<string>>
+  ip address <<ip/subnet>>
+  tunnel interface
+    encapsulation <<string>>
+    allow-service sshd
+    allow-service https
+    allow-service netconf
+################################################################################
