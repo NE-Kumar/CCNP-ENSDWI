@@ -2,7 +2,7 @@ Initializing the Controllers
 ################################################################################
 config t
 system 
-  organization-name CCNP-SDWAN
+  organization-name <<string>>
   site-id 1
   system-ip <<string>>
   host-name <<string>>
@@ -16,4 +16,5 @@ vpn 0
     allow-service sshd
     allow-service https
     allow-service netconf
+commit
 ################################################################################
